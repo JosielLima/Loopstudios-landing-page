@@ -1,0 +1,31 @@
+{
+  "name": "loopstudios-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack serve --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosielLima/Loopstudios-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JosielLima/Loopstudios-landing-page/issues"
+  },
+  "homepage": "https://github.com/JosielLima/Loopstudios-landing-page#readme",
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "sass": "^1.82.0",
+    "sass-loader": "^16.0.4",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  }
+}
