@@ -8,35 +8,41 @@
 </head>
 <body>
   <script src="bundle.js"></script>
-  <header>
-    <h1>Loopstudios</h1>
-    <nav>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Support</a></li>
-      </ul>
-    </nav>
+  <header class="main-header">
+    <div class="container">
+      <div class="flex between items-center">
+        <h1><img src="./images/logo.svg" alt="Loopstudios logo"></h1>
+        <nav class="menu">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+      </nav>
     <div class="slogan">
       Immersive experiences that deliver
     </div>
+    </div>
   </header>
-  <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h2>The leader in interactive VR</h2>
-        <p>Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
-        <a href="#">See all</a>
-      </div>
-      <div class="hero-image">
-        <img src="./images/hero-image.png" alt="Loopstudios hero image">
+  <main class="container">
+    <section class="support">
+      <picture class="image">
+        <source srcset="./images/desktop/image-interactive.jpg" media="(min-width: 1024px)">
+        <img loading="lazy" src="images/mobile/image-interactive.jpg" alt="Soccer team VR image">
+      </picture>
+      <div class="text-box">
+          <h2>The leader in interactive VR</h2>
+          <p>Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
       </div>
     </section>
     <section class="products">
-      <h2>Our creations</h2> 
-      <button class="btn-primary">See all</button>     
+      <div class="flex between items-center">
+        <h2>Our creations</h2> 
+        <button class="btn-primary">See all</button>     
+      </div>
       <div class="products-grid">
         <div class="product">
           <picture>
@@ -99,22 +105,34 @@
       </div>
     </section>
   </main>
-  <footer>
-    <div class="footer-content">
-      <div class="footer-logo">
-        <img src="./images/footer-logo.png" alt="Loopstudios logo">
+  <footer class="footer">
+    <div class="container">
+      <div class="flex between items-center">
+        <div class="footer-logo">
+          <img src="./images/logo.svg" alt="Loopstudios logo">
+        </div>
+        <div>
+          <div class="social-media flex">
+            <a href="#"><img src="./images/icon-facebook.svg" alt="Facebook icon"></a>
+            <a href="#"><img src="./images/icon-twitter.svg" alt="X icon"></a>
+            <a href="#"><img src="./images/icon-pinterest.svg" alt="pinterest icon"></a>
+            <a href="#"><img src="./images/icon-instagram.svg" alt="instagram icon"></a>
+          </div>
+        </div>
       </div>
-      <div class="footer-links">
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Support</a></li>
-        </ul>
-      </div>
-      <div class="footer-attribution">
-        © 2021 Loopstudios. All rights reserved.
+      <div class="flex between items-center">
+        <div class="menu">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>© 2021 Loopstudios. All rights reserved.</p>
+        </div>
       </div>
     </div>
 </body>
