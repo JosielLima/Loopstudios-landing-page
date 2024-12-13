@@ -76,6 +76,35 @@ a {
 }
 
 // layout
+.products {
+  padding: 2rem 0;
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template:
+		"title title button" 100px
+		"products-area products-area products-area" auto;
+  h2 {
+    grid-area: title;
+  }
+  button {
+    grid-area: button;
+  }
+  .products-area {
+    grid-area: products-area;
+  }
+
+  @media screen and (max-width: 480px) {
+    justify-content: center;
+    grid-template:
+      "title"
+      "products-area"
+      "button";  
+    h2, button {
+      justify-self: center;
+    }
+  }
+}
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -134,6 +163,10 @@ a {
   text-transform: uppercase;
   max-width: 650px;
   margin-top: 8rem;
+  @media screen and (max-width: 768px) {
+    font-size: 3rem;
+    
+  }
 }
 
 .text-box{
