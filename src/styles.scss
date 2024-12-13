@@ -1,5 +1,4 @@
 @use 'normalize';
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@400;700&display=swap');
 
 $title-font: 'Josefin Sans', sans-serif;
 $body-font: 'Alata', sans-serif;
@@ -23,6 +22,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $title-font;
+  font-weight: lighter;
   color: $color-dark;
 }
 
@@ -49,7 +49,17 @@ p {
 }
 
 a {
-  color: $color-contrast;;
+  color: $color-contrast;
+  position: relative;
+
+  &:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 25%;
+    width: 50%;
+    border-bottom: 2px solid $color-contrast;
+  }
 }
 
 
@@ -105,6 +115,8 @@ a {
 .main-header {
   background-image: url('../dist/images/desktop/image-hero.jpg');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 650px;
 }
 
@@ -150,7 +162,13 @@ a {
   border: solid 1px $color-dark;
   text-transform: uppercase;
   width: 164px;
+  cursor: pointer;
   background-color: $color-contrast;
+
+  &:hover {
+    background-color: $color-dark;
+    color: $color-contrast;
+  }
 }
 
 .product {
@@ -194,3 +212,4 @@ a {
     color: $color-contrast;
   }
 }
+
