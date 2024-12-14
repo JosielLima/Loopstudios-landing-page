@@ -10,7 +10,7 @@ $text-color: #2d3436;
 $color-dark: #000;
 $color-contrast: #fff;
 
-$font-size: 16px;
+$font-size: 15px;
 $font-size-small: 1rem;
 $font-size-medium: 2rem;
 $font-size-large: 2.5rem;
@@ -18,11 +18,12 @@ $font-size-large: 2.5rem;
 body {
   font-family: $body-font;
   font-size: $font-size;
+  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $title-font;
-  font-weight: lighter;
+  font-weight: 300;
   color: $color-dark;
 }
 
@@ -184,7 +185,7 @@ footer {
   border: 2px solid $color-contrast;
   padding: 2.5rem;
   font-size: 4.5rem;
-  font-weight: lighter;
+  font-weight: 300;
   font-family: $title-font;
   color: $color-contrast;
   text-transform: uppercase;
