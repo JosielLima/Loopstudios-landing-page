@@ -89,6 +89,7 @@ a {
   }
   button {
     grid-area: button;
+    justify-self: end;
   }
   .products-area {
     grid-area: products-area;
@@ -99,7 +100,7 @@ a {
     grid-template:
       "title"
       "products-area"
-      "button";  
+      "button";
     h2, button {
       justify-self: center;
     }
@@ -120,7 +121,8 @@ a {
 
 .support {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 600px;
+  grid-template-rows: 1fr;
   gap: 0;
   grid-template-areas: "image text";
   align-items: end;
@@ -128,14 +130,25 @@ a {
 
   .image {
     grid-area: image;
+    grid-row: 1 / 2;
   }
 
   .text-box {
     grid-area: text;
-    z-index: 1;
-    margin-left: -80%;
-    padding-left: 75px;
-    padding-bottom: 0;
+    grid-row: 1 / 2;
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    grid-template-areas: "image"
+                         "text";
+    .image {
+      grid-row: 1;
+    }
+    .text-box {
+      grid-row: 2;
+    }
   }
 }
 
@@ -166,8 +179,15 @@ a {
 
 .text-box{
   background-color: $color-contrast;
-  padding: 2rem;
+  padding-top: 4rem;
+  padding-left: 5rem;
   max-width: 445px;
+  @media screen and (max-width: 768px) {
+    max-width: 480px;
+    padding: 0;
+    text-align: center;
+    justify-self: center;
+  }
 }
 
 .menu {
