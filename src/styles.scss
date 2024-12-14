@@ -240,6 +240,9 @@ footer {
   position: absolute;
   top: 0;
   left: 0;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   .header-menu-mobile {
     padding: 1rem;
   }
@@ -261,6 +264,12 @@ footer {
       }
     }
   }
+}
+
+.menu-mobile-open {
+  display: block !important;
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .menu-hamburger {

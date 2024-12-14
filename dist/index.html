@@ -35,7 +35,7 @@
         <nav class="menu">
           <div class="flex between items-center header-menu-mobile">
             <img src="./images/logo.svg" alt="Loopstudios logo">
-            <img src="./images/icon-close.svg" alt="Close icon">
+            <img src="./images/icon-close.svg" alt="Close icon" class="menu-close">
           </div>
           <ul>
             <li><a href="#">About</a></li>
@@ -153,4 +153,19 @@
     </div>
   </footer>
 </body>
+<script>
+  const menuHamburger = document.querySelector('.menu-hamburger');
+  const menuClose = document.querySelector('.menu-close');
+  const menuMobile = document.querySelector('.menu-mobile');
+
+  menuHamburger.addEventListener('click', () => {
+    console.log('hamburger');
+    menuMobile.classList.add('menu-mobile-open');
+  });
+
+  menuClose.addEventListener('click', () => {
+    console.log('close');
+    menuMobile.classList.remove('menu-mobile-open');
+  });
+</script>
 </html>
