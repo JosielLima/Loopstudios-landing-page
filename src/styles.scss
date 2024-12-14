@@ -11,7 +11,7 @@ $color-dark: #000;
 $color-contrast: #fff;
 
 $font-size: 16px;
-$font-size-small: 0.95rem;
+$font-size-small: 1rem;
 $font-size-medium: 2rem;
 $font-size-large: 2.5rem;
 
@@ -169,6 +169,7 @@ footer {
 // blocks
 
 .main-header {
+  padding-top: 4rem;
   background-image: url('../dist/images/desktop/image-hero.jpg');
   background-size: cover;
   background-position: center;
@@ -219,7 +220,7 @@ footer {
     li a{
       text-decoration: none;
       font-family: $title-font;
-      font-size: $font-size-medium;
+      font-size: $font-size-small;
       padding-left: 1rem;
     }
   }
@@ -348,6 +349,9 @@ footer {
     grid-row: 2 / 3;
     ul {
       justify-content: flex-start;
+      li a {
+        padding-left: 0;
+      }
     }
   }
   .rights {
