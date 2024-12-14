@@ -15,7 +15,28 @@
     <div class="container">
       <div class="flex between items-center">
         <h1><img src="./images/logo.svg" alt="Loopstudios logo"></h1>
+        <div>
+          <nav class="menu menu-default">
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </nav>
+        </div>
+        <img class="menu-hamburger" src="./images/icon-hamburger.svg" alt="Menu icon">
+      </div>
+      <div class="slogan">
+        Immersive experiences that deliver
+      </div>
+      <div class="menu-mobile">
         <nav class="menu">
+          <div class="flex between items-center header-menu-mobile">
+            <img src="./images/logo.svg" alt="Loopstudios logo">
+            <img src="./images/icon-close.svg" alt="Close icon">
+          </div>
           <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">Careers</a></li>
@@ -23,10 +44,7 @@
             <li><a href="#">Products</a></li>
             <li><a href="#">Support</a></li>
           </ul>
-        </div>
-      </nav>
-      <div class="slogan">
-        Immersive experiences that deliver
+        </nav>
       </div>
     </div>
   </header>
@@ -34,7 +52,7 @@
     <section class="support">
       <picture class="image">
         <source srcset="./images/desktop/image-interactive.jpg" media="(min-width: 1024px)">
-        <img loading="lazy" src="images/mobile/image-interactive.jpg" alt="Soccer team VR image">
+        <img loading="lazy" src="./images/mobile/image-interactive.jpg" alt="Soccer team VR image">
       </picture>
       <div class="text-box">
           <h2>The leader in interactive VR</h2>
@@ -107,29 +125,31 @@
       </div>
     </section>
   </main>
-  <footer class="footer container">
-    <div class="footer-logo">
-      <img src="./images/logo.svg" alt="Loopstudios logo">
-    </div>
-    <div>
-      <div class="social-media flex">
-        <a href="#"><img src="./images/icon-facebook.svg" alt="Facebook icon"></a>
-        <a href="#"><img src="./images/icon-twitter.svg" alt="X icon"></a>
-        <a href="#"><img src="./images/icon-pinterest.svg" alt="pinterest icon"></a>
-        <a href="#"><img src="./images/icon-instagram.svg" alt="instagram icon"></a>
+  <footer>
+    <div class="footer container">
+      <div class="footer-logo">
+        <img src="./images/logo.svg" alt="Loopstudios logo">
       </div>
-    </div>
-    <div class="menu">
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Support</a></li>
-      </ul>
-    </div>
-    <div class="rights">
-      <p>© 2021 Loopstudios. All rights reserved.</p>
+      <div>
+        <div class="social-media flex">
+          <a href="#"><img src="./images/icon-facebook.svg" alt="Facebook icon"></a>
+          <a href="#"><img src="./images/icon-twitter.svg" alt="X icon"></a>
+          <a href="#"><img src="./images/icon-pinterest.svg" alt="pinterest icon"></a>
+          <a href="#"><img src="./images/icon-instagram.svg" alt="instagram icon"></a>
+        </div>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+      <div class="rights">
+        <p>© 2021 Loopstudios. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 </body>
