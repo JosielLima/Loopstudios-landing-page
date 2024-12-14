@@ -2,13 +2,11 @@
 
 $title-font: 'Josefin Sans', sans-serif;
 $body-font: 'Alata', sans-serif;
-$primary-color: #6c5ce7;
-$secondary-color: #f368e0;
-$accent-color: #00b894;
-$background-color: #f1f2f6;
-$text-color: #2d3436;
-$color-dark: #000;
-$color-contrast: #fff;
+
+$background-color: hsl(0, 0%, 41%);
+$text-color: hsl(0, 0%, 55%);
+$color-dark: hsl(0, 0%, 0%);
+$color-contrast: hsl(0, 0%, 100%);
 
 $font-size: 15px;
 $font-size-small: 1rem;
