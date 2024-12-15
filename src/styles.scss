@@ -50,7 +50,7 @@ p {
 a {
   color: $color-contrast;
   position: relative;
-  font-weight: $body-font;
+  font-family: $body-font;
 
   &:hover::after {
     content: '';
@@ -220,7 +220,6 @@ footer {
       text-decoration: none;
       font-family: $title-font;
       font-size: $font-size-small;
-      padding-left: 1rem;
     }
   }
 }
